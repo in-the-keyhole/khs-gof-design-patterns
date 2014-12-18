@@ -7,7 +7,7 @@ Checkout [this]() PDF for a walkthrough of the GOF patterns in Java...Exercises 
 
 > Design patterns are applied to a GUI calculator implementation.
 
-Here's  [Buy Book link](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1/181-0425776-1567644?ie=UTF8&qid=1418922833&sr=8-1&keywords=design+patterns+gang+of+four) 
+Here's a [link](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1/181-0425776-1567644?ie=UTF8&qid=1418922833&sr=8-1&keywords=design+patterns+gang+of+four) to the book
 
 ![http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1/181-0425776-1567644?ie=UTF8&qid=1418922833&sr=8-1&keywords=design+patterns+gang+of+four](https://raw.githubusercontent.com/in-the-keyhole/khs-gof-design-patterns/master/images/gof-book.png)
 
