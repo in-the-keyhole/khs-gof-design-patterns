@@ -3,7 +3,7 @@ khs-gof-design-patterns
 
 The Gang of Four desing patterns book, whas a seminal piece of work that helped introduce OO to the software development world in the 90's.  Understanding these patterns will help your own software designs. 
 
-Checkout [this](https://github.com/in-the-keyhole/khs-gof-design-patterns/blob/master/Design%20Pattern%20Course.pdf) PDF for a walkthrough of the GOF patterns in Java...Exercises are located in the `exercises` folder and `Java`exercise source solutions are in the `src` folder.  
+Checkout [this](https://github.com/in-the-keyhole/khs-gof-design-patterns/blob/master/Design%20Pattern%20Course.pdf) PDF for a walkthrough of the GOF patterns in Java...Exercises are located in the `EXERCISES` folder and `Java`exercise source solutions are in the `src` folder.  
 
 > Design patterns are applied to a GUI calculator implementation.
 
