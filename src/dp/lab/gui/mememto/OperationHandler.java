@@ -1,0 +1,24 @@
+package dp.lab.gui.mememto;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+public class OperationHandler extends CalculatorHandler{
+
+	/**
+	 * Constructor for OperationHandler
+	 */
+	public OperationHandler(CalculatorPanel aPanel) {
+		super(aPanel);
+	}
+	
+	public void actionPerformed(ActionEvent event) {
+		
+		
+		JButton aButton = (JButton) event.getSource();
+		calcPanel.applyOperation(aButton.getText());
+		
+	}
+	
+	
+
+}
+
