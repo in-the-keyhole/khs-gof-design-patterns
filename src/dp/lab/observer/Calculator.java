@@ -3,10 +3,6 @@ package dp.lab.observer;
 import java.util.Iterator;
 import java.util.Vector;
 
-/* 
- * Basic Calclator Class
- */
-
 public class Calculator {
 
 	private double result = 0.0;

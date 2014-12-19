@@ -12,9 +12,7 @@ public class KeypadHandler extends CalculatorHandler {
 		super(aCalc);
 	}
 	
-	/**
-	 * @see CalculatorHandler#actionPerformed(ActionEvent)
-	 */
+
 	public void actionPerformed(ActionEvent event) {
 				
 		JButton aButton = (JButton) event.getSource();

@@ -4,7 +4,7 @@ package dp.lab.decorator;
 /**
  * @author dpitt
  *
- * Factory that produces different types of Calcualtor 
+ * Factory that produces different types of Calculator 
  * Operation configurations
  */
 public class ConcreteCalculatorFactory extends CalculatorFactory {

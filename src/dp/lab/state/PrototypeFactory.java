@@ -1,8 +1,5 @@
 package dp.lab.state;
 
-import dp.lab.strategy.*;
-
-
 public class PrototypeFactory {
 
 	// prototype instances

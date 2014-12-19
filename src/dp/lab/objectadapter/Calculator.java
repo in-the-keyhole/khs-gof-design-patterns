@@ -120,9 +120,6 @@ public class Calculator {
 		rightValue = value;
 	}
 
-	/**
-	 * Print current result and operation expression
-	 */
 	public void print() {
 
 		printer.print(this);
@@ -200,50 +197,32 @@ public class Calculator {
 		this.result = result;
 	}
 
-	/**
-	 * Returns the operations.
-	 * @return java.util.Hashtable
-	 */
+
 	public java.util.Hashtable getOperations() {
 		return operations;
 	}
 
-	/**
-	 * Sets the operations.
-	 * @param operations The operations to set
-	 */
+
 	public void setOperations(java.util.Hashtable operations) {
 		this.operations = operations;
 	}
 
-	/**
-	 * Returns the state.
-	 * @return OutputState
-	 */
+
 	public OutputState getState() {
 		return state;
 	}
 
-	/**
-	 * Sets the state.
-	 * @param state The state to set
-	 */
+
 	public void setState(OutputState state) {
 		this.state = state;
 	}
 
-	/**
-	 * Returns the printer.
-	 * @return Printer
-	 */
+
 	public Printer getPrinter() {
 		return printer;
 	}
 
-	/**
-	 * Sets the printer.
-	 * @param printer The printer to set
-	 */
+
 	public void setPrinter(Printer printer) {
 		this.printer = printer;
 	}

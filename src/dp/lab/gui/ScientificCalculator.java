@@ -5,9 +5,6 @@ import dp.lab.strategy.*;
 
 public class ScientificCalculator {
 
-	/**
-	 * Constructor for ScientificCalculator.
-	 */
 	public ScientificCalculator() {
 		super();
 	}

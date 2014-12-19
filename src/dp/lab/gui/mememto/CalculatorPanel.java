@@ -15,9 +15,7 @@ public class CalculatorPanel extends javax.swing.JPanel {
 
 	public static final int DISPLAY_WIDTH = 80;
 
-	/**
-	 * CalculatorPanel constructor comment.
-	 */
+
 	public CalculatorPanel(Calculator aCalc) {
 		super();
 		calculator = aCalc;

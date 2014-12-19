@@ -20,9 +20,7 @@ public class Tester {
 		formula.add(new SubtractOperation(),20.00);
 		calc.execute(formula);
 		calc.print();
-		
-		
-						
+							
 
 	}
 

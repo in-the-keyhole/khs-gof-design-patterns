@@ -1,7 +1,5 @@
 package dp.lab.gui.mememto;
 
-
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
@@ -12,9 +10,7 @@ public class KeypadHandler extends CalculatorHandler {
 		super(aCalc);
 	}
 	
-	/**
-	 * @see CalculatorHandler#actionPerformed(ActionEvent)
-	 */
+
 	public void actionPerformed(ActionEvent event) {
 				
 		JButton aButton = (JButton) event.getSource();

@@ -4,8 +4,6 @@ public class Tester {
 	public static void main(String[] args) {
 
 		
-		
-
 		// basic calculator
 
 		System.out.println("* * Basic Calculator * *");

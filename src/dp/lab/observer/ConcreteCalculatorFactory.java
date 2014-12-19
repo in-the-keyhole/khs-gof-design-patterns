@@ -1,12 +1,6 @@
 package dp.lab.observer;
 
 
-/**
- * @author dpitt
- *
- * Factory that produces different types of Calcualtor 
- * Operation configurations
- */
 public class ConcreteCalculatorFactory extends CalculatorFactory {
 
 	private static ConcreteCalculatorFactory instance = null;

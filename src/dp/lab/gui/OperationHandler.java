@@ -3,9 +3,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 public class OperationHandler extends CalculatorHandler{
 
-	/**
-	 * Constructor for OperationHandler
-	 */
+
 	public OperationHandler(CalculatorPanel aPanel) {
 		super(aPanel);
 	}

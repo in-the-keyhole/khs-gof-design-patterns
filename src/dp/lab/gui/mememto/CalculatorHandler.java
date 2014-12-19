@@ -14,13 +14,9 @@ public abstract class CalculatorHandler implements ActionListener {
 		calcPanel = aPanel;
 	}
 
-	/**
-	 * @see ActionListener#actionPerformed(ActionEvent)
-	 */
+
 	public abstract void actionPerformed(ActionEvent arg0);
-		
-		
-		
+				
 	
 }
 

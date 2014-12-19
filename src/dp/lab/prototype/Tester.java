@@ -1,6 +1,5 @@
 package dp.lab.prototype;
 
-import dp.lab.factory.*;
 import dp.lab.strategy.*;
 
 public class Tester {

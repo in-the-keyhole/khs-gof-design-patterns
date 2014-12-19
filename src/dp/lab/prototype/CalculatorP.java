@@ -110,18 +110,11 @@ public class CalculatorP {
 	}
 	
 	
-	/**
-	 * Returns the operations.
-	 * @return java.util.Hashtable
-	 */
 	public java.util.Hashtable getOperations() {
 		return operations;
 	}
 
-	/**
-	 * Sets the operations.
-	 * @param operations The operations to set
-	 */
+
 	public void setOperations(java.util.Hashtable operations) {
 		this.operations = operations;
 	}

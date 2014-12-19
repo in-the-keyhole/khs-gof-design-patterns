@@ -5,7 +5,7 @@ import dp.lab.strategy.*;
 /**
  * @author dpitt
  *
- * Factory that produces different types of Calcualtor 
+ * Factory that produces different types of Calculator 
  * Operation configurations
  */
 public class CalculatorFactoryA extends CalculatorFactory {
