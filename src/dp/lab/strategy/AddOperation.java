@@ -7,10 +7,9 @@ public class AddOperation extends Operation{
 		super("+");
 	}
 	
-	public double execute(double leftValue,double rightValue) {
+	public String execute(double leftValue,double rightValue) {
 		
-		
-		return leftValue + rightValue; 
+		return String.valueOf(leftValue + rightValue); 
 		
 	}	 
 

@@ -8,8 +8,8 @@ public class SubtractOperation extends Operation {
 	}
 
 	
-	public double execute(double leftValue, double rightValue) {
-		return leftValue - rightValue;
+	public String execute(double leftValue, double rightValue) {
+		return String.valueOf(leftValue - rightValue);
 	}
 
 }

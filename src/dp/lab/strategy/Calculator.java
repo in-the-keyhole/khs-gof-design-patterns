@@ -5,31 +5,54 @@ package dp.lab.strategy;
 
 public class Calculator {
 
-	private double result = 0.0;
+	private String result = "0.0";
 	private double leftValue = 0.0;
 	private String operation = "";
 	private double rightValue = 0.0;
 	private boolean reset = false;
 	
 	private java.util.Hashtable operations = new java.util.Hashtable();
-		
+	private java.util.Hashtable unaryOperations = new java.util.Hashtable();
 
 	public Calculator execute(String opKey,double value) {
 
 	    Operation op = (Operation) getOperations().get(opKey);
-	    if (op == null) {
+	    UnaryOperation uop = (UnaryOperation) getUnaryOperations().get(opKey);
+	    
+	    //tests if the operation used is unary or binary or the clear operation
+	    if(opKey == "clr"){
+	    	
+	    	clear();
+	    	
+	    } else if (uop != null) {
+	    	operation = opKey;
+			leftValue = value;
+			
+			result = uop.execute(getLeftValue());
+			
+			reset = true;
+			
+			if(opKey == "hex" || opKey == "oct" || opKey == "bi"){
+				reset = false;
+			}
+			
+	    }else if (op != null){
+		    operation = opKey;
+			swap(value);
+			
+			if (reset) {
+				result = op.execute(getLeftValue(),getRightValue());
+			} else {
+				result = String.valueOf(value);
+			}
+			
+			reset = true;
+			
+	    }else{
 	    	throw new RuntimeException("Operation "+opKey+" not supported...");
 	    }
-	    operation = opKey;
-		swap(value);
-		if (reset) {
-		result = op.execute(getLeftValue(),getRightValue());
-		} else {
-			result = value;
-		}
-		reset = true;
-		
-		return this;
+	    
+	    return this;
 		
 	}
 
@@ -37,12 +60,16 @@ public class Calculator {
 		operations.put(op.getName(),op);
 	}
 	
+	public void install(UnaryOperation op) {
+		unaryOperations.put(op.getName(),op);
+	}
+	
 	public void clear() {
 		
 		reset = false;
 		leftValue = 0.0;
 		rightValue= 0.0;
-		result = 0.0;
+		result = "0.0";
 	}
 		
 		
@@ -53,7 +80,7 @@ public class Calculator {
 	 */
 	void swap(double value) {
 	
-		leftValue = result;
+		leftValue = Double.parseDouble(result);
 		rightValue = value;
 	}
 
@@ -105,11 +132,11 @@ public class Calculator {
 		this.operation = operation;
 	}
 
-	public double getResult() {
+	public String getResult() {
 		return result;
 	}
 	
-	public void setResult(double result) {
+	public void setResult(String result) {
 		this.result = result;
 	}
 	
@@ -121,6 +148,10 @@ public class Calculator {
 	public java.util.Hashtable getOperations() {
 		return operations;
 	}
+	
+	public java.util.Hashtable getUnaryOperations() {
+		return unaryOperations;
+	}
 
 	/**
 	 * Sets the operations.
@@ -128,6 +159,10 @@ public class Calculator {
 	 */
 	public void setOperations(java.util.Hashtable operations) {
 		this.operations = operations;
+	}
+	
+	public void setUnaryOperations(java.util.Hashtable operations) {
+		this.operations = unaryOperations;
 	}
 
 }

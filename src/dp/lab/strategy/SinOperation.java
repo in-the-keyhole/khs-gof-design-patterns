@@ -1,7 +1,7 @@
 package dp.lab.strategy;
 
 
-public class SinOperation extends Operation {
+public class SinOperation extends UnaryOperation {
 
 	/**
 	 * Constructor for SinOperation.
@@ -14,8 +14,8 @@ public class SinOperation extends Operation {
 	/**
 	 * @see dp.lab.strategy.Operation#execute(double, double)
 	 */
-	public double execute(double leftvalue, double rightValue) {
-		return Math.sin(rightValue);
+	public String execute(double leftValue) {
+		return String.valueOf(Math.sin(leftValue));
 	}
 
 }

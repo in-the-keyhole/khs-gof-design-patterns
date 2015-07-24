@@ -10,7 +10,6 @@ public class OperationHandler extends CalculatorHandler{
 	
 	public void actionPerformed(ActionEvent event) {
 		
-		
 		JButton aButton = (JButton) event.getSource();
 		calcPanel.applyOperation(aButton.getText());
 		

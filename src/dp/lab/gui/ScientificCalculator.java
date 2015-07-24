@@ -40,8 +40,7 @@ public class ScientificCalculator {
 				frame.getHeight() + insets.top + insets.bottom);
 			frame.setVisible(true);
 		} catch (Throwable exception) {
-			System.err.println(
-				"Exception occurred in main() of javax.swing.JPanel");
+			System.err.println("Exception occurred in main() of javax.swing.JPanel");
 			exception.printStackTrace(System.out);
 		}
 

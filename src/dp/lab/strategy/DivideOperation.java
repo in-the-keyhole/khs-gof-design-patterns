@@ -14,8 +14,8 @@ public class DivideOperation extends Operation {
 	/**
 	 * @see dp.lab.strategy.Operation#execute(double, double)
 	 */
-	public double execute(double leftValue, double rightValue) {
-		return leftValue / rightValue;
+	public String execute(double leftValue, double rightValue) {
+		return String.valueOf(leftValue / rightValue);
 	}
 
 }

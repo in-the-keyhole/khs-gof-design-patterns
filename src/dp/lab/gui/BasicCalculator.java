@@ -23,7 +23,6 @@ public class BasicCalculator {
 			calc.install( new MultiplyOperation() );
 			calc.install( new DivideOperation() );
 			
-			
 			aCalculatorPanel = new CalculatorPanel(calc);
 			
 			
@@ -45,9 +44,6 @@ public class BasicCalculator {
 		    exception.printStackTrace(System.out);
 		}
 	
-		}
 	}
+}
 	
-	
-	
-

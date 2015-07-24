@@ -1,6 +1,6 @@
 package dp.lab.strategy;
 
-public class LogOperation extends Operation {
+public class LogOperation extends UnaryOperation {
 
 
 	public LogOperation() {
@@ -8,8 +8,8 @@ public class LogOperation extends Operation {
 	}
 
 
-	public double execute(double leftvalue, double rightValue) {
-		return Math.log(rightValue);
+	public String execute(double leftValue) {
+		return String.valueOf(Math.log(leftValue));
 	}
 
 }

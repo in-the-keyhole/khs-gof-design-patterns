@@ -10,7 +10,7 @@ public abstract class Operation {
 		setName(op);
 	}
 
-	public abstract double execute(double leftvalue,double rightValue); 
+	public abstract String execute(double leftvalue,double rightValue); 
 
 
 	public String getName() {

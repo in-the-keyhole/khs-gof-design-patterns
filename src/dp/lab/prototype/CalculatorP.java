@@ -23,7 +23,7 @@ public class CalculatorP {
 	    }
 	    operation = opKey;
 		swap(value);
-		result = op.execute(getLeftValue(),getRightValue());
+		result = Double.parseDouble(op.execute(getLeftValue(),getRightValue()));
 		return this;
 		
 	}

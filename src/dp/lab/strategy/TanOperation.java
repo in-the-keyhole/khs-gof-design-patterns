@@ -1,7 +1,7 @@
 package dp.lab.strategy;
 
 
-public class TanOperation extends Operation {
+public class TanOperation extends UnaryOperation {
 
 	/**
 	 * Constructor for TanOperation.
@@ -14,8 +14,8 @@ public class TanOperation extends Operation {
 	/**
 	 * @see dp.lab.strategy.Operation#execute(double, double)
 	 */
-	public double execute(double leftvalue, double rightValue) {
-		return Math.tan(rightValue);
+	public String execute(double leftValue) {
+		return String.valueOf(Math.tan(leftValue));
 	}
 
 }
