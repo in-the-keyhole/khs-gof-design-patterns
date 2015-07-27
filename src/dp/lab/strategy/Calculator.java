@@ -1,4 +1,7 @@
 package dp.lab.strategy;
+
+import java.util.Hashtable;
+
 /* 
  * Basic Calclator Class
  */
@@ -11,8 +14,8 @@ public class Calculator {
 	private double rightValue = 0.0;
 	private boolean reset = false;
 	
-	private java.util.Hashtable operations = new java.util.Hashtable();
-	private java.util.Hashtable unaryOperations = new java.util.Hashtable();
+	private Hashtable<String, Object> operations = new java.util.Hashtable<>();
+	private Hashtable<String, Object> unaryOperations = new java.util.Hashtable<>();
 
 	public Calculator execute(String opKey,double value) {
 
@@ -145,11 +148,11 @@ public class Calculator {
 	 * Returns the operations.
 	 * @return java.util.Hashtable
 	 */
-	public java.util.Hashtable getOperations() {
+	public java.util.Hashtable<String, Object> getOperations() {
 		return operations;
 	}
 	
-	public java.util.Hashtable getUnaryOperations() {
+	public java.util.Hashtable<String, Object> getUnaryOperations() {
 		return unaryOperations;
 	}
 
@@ -157,11 +160,11 @@ public class Calculator {
 	 * Sets the operations.
 	 * @param operations The operations to set
 	 */
-	public void setOperations(java.util.Hashtable operations) {
+	public void setOperations(java.util.Hashtable<String, Object> operations) {
 		this.operations = operations;
 	}
 	
-	public void setUnaryOperations(java.util.Hashtable operations) {
+	public void setUnaryOperations(java.util.Hashtable<String, Object> operations) {
 		this.operations = unaryOperations;
 	}
 

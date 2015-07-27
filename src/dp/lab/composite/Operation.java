@@ -10,7 +10,7 @@ public abstract class Operation {
 		setName(op);
 	}
 
-	public abstract void execute(Calculator calc); 
+	public abstract void execute(Calculator calculator); 
 
 	
 	public String getName() {

@@ -12,6 +12,7 @@ public class Client {
 		
 
 		// get basic calculator
+		@SuppressWarnings("unused")
 		Calculator calc = ConcreteCalculatorFactory.getInstance().basic();
 		
 		

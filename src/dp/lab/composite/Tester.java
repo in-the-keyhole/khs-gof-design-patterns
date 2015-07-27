@@ -12,6 +12,7 @@ public class Tester {
 
 		// Create Memory caretaker
 		
+		@SuppressWarnings("unused")
 		CalculatorMemory memory = new CalculatorMemory();
 		
 		

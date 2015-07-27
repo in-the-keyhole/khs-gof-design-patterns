@@ -1,4 +1,6 @@
 package dp.lab.state;
+
+import java.util.Hashtable;
 /* 
  * Basic Calclator Class
  */
@@ -12,7 +14,7 @@ public class Calculator {
 	private boolean reset = false;
 	public OutputState state = new DefaultOutputState();
 
-	private java.util.Hashtable operations = new java.util.Hashtable();
+	private Hashtable<String, Operation> operations = new Hashtable<>();
 
 	public Calculator execute(String opKey, double value) {
 
@@ -124,7 +126,7 @@ public class Calculator {
 	 * Returns the operations.
 	 * @return java.util.Hashtable
 	 */
-	public java.util.Hashtable getOperations() {
+	public Hashtable<String, Operation> getOperations() {
 		return operations;
 	}
 
@@ -132,7 +134,7 @@ public class Calculator {
 	 * Sets the operations.
 	 * @param operations The operations to set
 	 */
-	public void setOperations(java.util.Hashtable operations) {
+	public void setOperations(Hashtable<String, Operation> operations) {
 		this.operations = operations;
 	}
 

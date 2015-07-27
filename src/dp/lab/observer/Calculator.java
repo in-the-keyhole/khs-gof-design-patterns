@@ -1,7 +1,8 @@
 package dp.lab.observer;
 
+import java.util.Hashtable;
 import java.util.Iterator;
-import java.util.Vector;
+import java.util.Stack;
 
 public class Calculator {
 
@@ -12,9 +13,9 @@ public class Calculator {
 	private boolean reset = false;
 	public OutputState state = new DefaultOutputState();
 	public Printer printer = new ConsolePrinter();
-	private Vector memory = new Vector();
+	private Stack<Memento> memory = new Stack<>();
 
-	private java.util.Hashtable operations = new java.util.Hashtable();
+	private Hashtable<String, Operation> operations = new Hashtable<>();
 
 	public Memento produceMemento() {
 
@@ -151,7 +152,7 @@ public class Calculator {
 
 	public void printMemory() {
 
-		Iterator iterator = memory.iterator();
+		Iterator<Memento> iterator = memory.iterator();
 		while (iterator.hasNext()) {
 
 			Memento mem = (Memento) iterator.next();
@@ -200,7 +201,7 @@ public class Calculator {
 	 * Returns the operations.
 	 * @return java.util.Hashtable
 	 */
-	public java.util.Hashtable getOperations() {
+	public Hashtable<String, Operation> getOperations() {
 		return operations;
 	}
 
@@ -208,7 +209,7 @@ public class Calculator {
 	 * Sets the operations.
 	 * @param operations The operations to set
 	 */
-	public void setOperations(java.util.Hashtable operations) {
+	public void setOperations(Hashtable<String, Operation> operations) {
 		this.operations = operations;
 	}
 

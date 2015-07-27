@@ -1,5 +1,7 @@
 package dp.lab.prototype;
 
+import java.util.Hashtable;
+
 import dp.lab.strategy.*;
 /* 
  * Basic Calclator Class with prototype behavior
@@ -12,7 +14,7 @@ public class CalculatorP {
 	private String operation = "";
 	private double rightValue = 0.0;
 	
-	private java.util.Hashtable operations = new java.util.Hashtable();
+	private Hashtable<String, Operation> operations = new Hashtable<>();
 		
 
 	public CalculatorP execute(String opKey,double value) {
@@ -110,12 +112,12 @@ public class CalculatorP {
 	}
 	
 	
-	public java.util.Hashtable getOperations() {
+	public Hashtable<String, Operation> getOperations() {
 		return operations;
 	}
 
 
-	public void setOperations(java.util.Hashtable operations) {
+	public void setOperations(Hashtable<String, Operation> operations) {
 		this.operations = operations;
 	}
 

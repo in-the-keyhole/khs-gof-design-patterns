@@ -1,7 +1,8 @@
 package dp.lab.objectadapter;
 
+import java.util.Hashtable;
 import java.util.Iterator;
-import java.util.Vector;
+import java.util.Stack;
 
 /* 
  * Basic Calclator Class
@@ -16,9 +17,9 @@ public class Calculator {
 	private boolean reset = false;
 	public OutputState state = new DefaultOutputState();
 	public Printer printer = new ConsolePrinter();
-	private Vector memory = new Vector();
+	private Stack<Memento> memory = new Stack<>();
 
-	private java.util.Hashtable operations = new java.util.Hashtable();
+	private Hashtable<String, Operation> operations = new Hashtable<>();
 
 	public Memento produceMemento() {
 
@@ -152,7 +153,7 @@ public class Calculator {
 
 	public void printMemory() {
 
-		Iterator iterator = memory.iterator();
+		Iterator<Memento> iterator = memory.iterator();
 		while (iterator.hasNext()) {
 
 			Memento mem = (Memento) iterator.next();
@@ -198,12 +199,12 @@ public class Calculator {
 	}
 
 
-	public java.util.Hashtable getOperations() {
+	public Hashtable<String, Operation> getOperations() {
 		return operations;
 	}
 
 
-	public void setOperations(java.util.Hashtable operations) {
+	public void setOperations(Hashtable<String, Operation> operations) {
 		this.operations = operations;
 	}
 

@@ -1,11 +1,11 @@
 package dp.lab.composite;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class FormulaOperation extends Operation {
 
-	private Vector operations = new Vector();
-	private Vector values = new Vector();
+	private ArrayList<Operation> operations = new ArrayList<>();
+	private ArrayList<Double> values = new ArrayList<>();
 	
 	public FormulaOperation(String op) {
 		super(op);
@@ -22,8 +22,8 @@ public class FormulaOperation extends Operation {
 			
 		for (int i = 0; i < operations.size(); i++)
 		{
-			Operation op = (Operation) operations.elementAt(i);
-			Double value = (Double) values.elementAt(i);
+			Operation op = (Operation) operations.get(i);
+			Double value = (Double) values.get(i);
 			calc.execute(op,value.doubleValue());
 		}
 		
@@ -31,8 +31,8 @@ public class FormulaOperation extends Operation {
 	} 
 
 	public void add(Operation op, double value) {
-		operations.addElement(op);
-		values.addElement( new Double(value));
+		operations.add(op);
+		values.add( new Double(value));
 		
 	}			
 

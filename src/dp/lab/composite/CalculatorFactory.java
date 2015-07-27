@@ -1,5 +1,4 @@
 package dp.lab.composite;
-import dp.lab.strategy.*;
 
 public abstract class CalculatorFactory {
 

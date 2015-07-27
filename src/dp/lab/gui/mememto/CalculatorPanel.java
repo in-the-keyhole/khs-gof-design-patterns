@@ -1,10 +1,13 @@
 package dp.lab.gui.mememto;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.util.*;
+
 import dp.lab.memento.*;
 
+@SuppressWarnings("serial")
 public class CalculatorPanel extends javax.swing.JPanel {
 	private JTextField displayField = null;
 	private Calculator calculator = null;
@@ -180,7 +183,7 @@ public class CalculatorPanel extends javax.swing.JPanel {
 		panel.setLayout(layout);
 		panel.setBounds(189, 29, 77, 136);
 
-		Iterator iterator = calculator.getOperations().keySet().iterator();
+		Iterator<?> iterator = calculator.getOperations().keySet().iterator();
 
 		// create operations from calculator instance
 		while (iterator.hasNext()) {
@@ -216,7 +219,6 @@ public class CalculatorPanel extends javax.swing.JPanel {
 					System.exit(0);
 				};
 			});
-			frame.show();
 			java.awt.Insets insets = frame.getInsets();
 			frame.setSize(
 				frame.getWidth() + insets.left + insets.right,

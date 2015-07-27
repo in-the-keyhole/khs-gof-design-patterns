@@ -1,10 +1,12 @@
 package dp.lab.objectadapter;
 
-import java.util.Vector;
+import java.util.Stack;
+
+import dp.lab.objectadapter.Calculator.Memento;
 
 public class CalculatorMemory {
 
-	Vector mementos = new Vector();
+	Stack<Memento> mementos = new Stack<>();
 	
 	public void remember(Calculator calc) {
 		

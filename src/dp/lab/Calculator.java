@@ -1,6 +1,6 @@
 package dp.lab;
 /* 
- * Basic Calclator Class
+ * Basic Calculator Class
  */
 
 public class Calculator {

@@ -1,6 +1,5 @@
 package dp.lab.memento;
 
-import dp.lab.strategy.*;
 
 public class PrototypeFactory {
 

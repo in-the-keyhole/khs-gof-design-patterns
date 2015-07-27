@@ -1,4 +1,8 @@
 package dp.lab.decorator;
+
+import java.util.Hashtable;
+
+import dp.lab.decorator.Operation;
 /* 
  * Basic Calclator Class
  */
@@ -13,11 +17,11 @@ public class Calculator {
 	public OutputState state = new DefaultOutputState();
 	public Printer printer = new ConsolePrinter();
 
-	private java.util.Hashtable operations = new java.util.Hashtable();
+	private Hashtable<String, Operation> operations = new Hashtable<>();
 
 	public Calculator execute(String opKey, double value) {
 
-		Operation op = (Operation) getOperations().get(opKey);
+		Operation op = getOperations().get(opKey);
 		if (op == null) {
 			throw new RuntimeException(
 				"Operation " + opKey + " not supported...");
@@ -25,8 +29,7 @@ public class Calculator {
 		operation = opKey;
 		swap(value);
 		if (reset) {
-		op.execute(this);
-		
+			op.execute(this);
 		} else {
 			result = value;
 		}
@@ -126,7 +129,7 @@ public class Calculator {
 	 * Returns the operations.
 	 * @return java.util.Hashtable
 	 */
-	public java.util.Hashtable getOperations() {
+	public Hashtable<String, Operation> getOperations() {
 		return operations;
 	}
 
@@ -134,7 +137,7 @@ public class Calculator {
 	 * Sets the operations.
 	 * @param operations The operations to set
 	 */
-	public void setOperations(java.util.Hashtable operations) {
+	public void setOperations(Hashtable<String, Operation> operations) {
 		this.operations = operations;
 	}
 

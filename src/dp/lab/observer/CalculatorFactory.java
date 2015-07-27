@@ -1,5 +1,4 @@
 package dp.lab.observer;
-import dp.lab.strategy.*;
 
 public abstract class CalculatorFactory {
 

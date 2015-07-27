@@ -1,7 +1,5 @@
 package dp.lab.objectadapter;
 
-import dp.lab.strategy.*;
-
 public class PrototypeFactory {
 
 	static Calculator basic = null;

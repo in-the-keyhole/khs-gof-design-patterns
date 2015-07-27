@@ -37,7 +37,6 @@ public class ProgrammerCalculator {
 					System.exit(0);
 				};
 			});
-			frame.show();
 			java.awt.Insets insets = frame.getInsets();
 			frame.setSize(
 				frame.getWidth() + insets.left + insets.right,
